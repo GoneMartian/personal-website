@@ -1,4 +1,4 @@
-![Profile logo](/gh-pages/assets/IMG_9974.jpeg)
+![Profile logo](/docs/assets/IMG_9974.jpeg)
 
 ## Welcome to my website 
 
