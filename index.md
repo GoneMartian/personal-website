@@ -1,6 +1,6 @@
-![Profile logo](/personal-website/docs/assets/IMG_9974.jpeg)
+![Profile logo](https://github.com/GoneMartian/personal-website/blob/gh-pages/docs/assets/IMG_9974.jpeg?raw=true)
 
-## Welcome to my website
+## Welcome to my website 
 
 
 
