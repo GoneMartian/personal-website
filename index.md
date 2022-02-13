@@ -1,4 +1,4 @@
-![Profile logo](https://github.com/GoneMartian/personal-website/blob/gh-pages/docs/assets/IMG_9974.jpeg?raw=true)
+![Profile logo](/gh-pages/assets/IMG_9974.jpeg)
 
 ## Welcome to my website 
 
