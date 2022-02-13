@@ -1,4 +1,4 @@
-![Profile logo](/least-github-pages/assets/IMG_9974.jpeg)
+![Profile logo](/personal-website/docs/assets/IMG_9974.jpeg)
 
 ## Welcome to my website
 
