@@ -1,4 +1,5 @@
 ![Profile logo](/docs/assets/IMG_9974.jpg)
+> Painting by Büşra Ayar
 
 ## Welcome to my website 
 
