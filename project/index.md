@@ -2,6 +2,7 @@
 
 # Remembering Through Melodies: Effects of Melodical Presentation on Memory
 #### Serengeti Ayhan, Arda Arslanbakan, Verda Pınar, Zeynep Büşra Ayar, Ece Kızıltepe
+---
 ## Introduction
   Purnell-Web and Speelman (2008) found that rhythm can improve the recall of information, with or without musical accompaniment.
 Music is known to evoke emotions in the listeners (Koneĉhi, 2008) and emotions are known to affect memory (Levine & Pizarro, 2004). Kuperman and his colleagues found that words can also affect memory. Whatever the word is positive or negative in a lexical sense can affect the recall rate (Kuperman et al., 2014).
