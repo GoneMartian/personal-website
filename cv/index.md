@@ -61,9 +61,22 @@ Social Psychology Laboratory ( Assoc Prof. [Athanasios Mouratidis](http://www.ps
 
 Linguistic Laboratory (Assoc Prof. [Alba Tuninetti](http://www.psy.bilkent.edu.tr/faculty/faculty-members/alba-tuninetti/)) 2022 January - Continuing  
 
+Bilkent Psychology Society, VIII. Neurology Days, Bilkent University - 2020 - Participant certificate
+
+---
+
+## Extracurricular Activities 
+Gürçağ Model United Nations Club 2017 - 2019 - Participated as a delegate,led and organized club activities.
+
+UN Sustainable Development Solutions Network (SDSN) Hub Member 2021 - Continuing 
+
+Bilkent Psychology Society (BPT) 2020 - Continuing - An active member in participating club meetings and psychology conferences.
+
+
 ---
 
 # Education
+Gürçağ Private High School - Turkey, Ankara 2015 - 2019
 
 ## **Bachelor's Degree in Psychology 2019 -**
 
