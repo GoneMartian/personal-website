@@ -57,9 +57,9 @@ Beginner speaker
 
 # Experiences
 
-Social Psychology Laboratory ( Assoc Prof. [Athanasios Mouratidis](http://www.psy.bilkent.edu.tr/faculty/faculty-members/athanasios-mouratidis/)) 2021 - 2021
+Social Psychology Laboratory ( Assoc Prof. [Athanasios Mouratidis](http://www.psy.bilkent.edu.tr/faculty/faculty-members/athanasios-mouratidis/)) 2021 September - 2022 December
 
-Linguistic Laboratory (Assoc Prof. [Alba Tuninetti](http://www.psy.bilkent.edu.tr/faculty/faculty-members/alba-tuninetti/)) 2022 - 
+Linguistic Laboratory (Assoc Prof. [Alba Tuninetti](http://www.psy.bilkent.edu.tr/faculty/faculty-members/alba-tuninetti/)) 2022 January - Continuing  
 
 ---
 
