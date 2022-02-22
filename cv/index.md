@@ -78,7 +78,7 @@ Bilkent Psychology Society (BPT) 2020 - Continuing - An active member in partici
 # Education
 Gürçağ Private High School - Turkey, Ankara 2015 - 2019
 
-## **Bachelor's Degree in Psychology 2019 -**
+### **Bilkent University - Bachelor's Degree in Psychology 2019 - 2023 (Expected)**
 
 ### **CGPA**
 
