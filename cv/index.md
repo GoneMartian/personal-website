@@ -55,7 +55,7 @@ Beginner speaker
 
 ---
 
-# Experiences
+## Experiences
 
 Social Psychology Laboratory ( Assoc Prof. [Athanasios Mouratidis](http://www.psy.bilkent.edu.tr/faculty/faculty-members/athanasios-mouratidis/)) 2021 September - 2022 December
 
@@ -75,14 +75,12 @@ Bilkent Psychology Society (BPT) 2020 - Continuing - An active member in partici
 
 ---
 
-# Education
+## Education
 Gürçağ Private High School - Turkey, Ankara 2015 - 2019
 
 ### **Bilkent University - Bachelor's Degree in Psychology 2019 - 2023 (Expected)**
 
-### **CGPA**
-
-3.04 - Honour Student
+### **CGPA: 3.04 - Honour Student**
 
 ---
 
