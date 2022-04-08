@@ -19,6 +19,7 @@ Our research uses novel melodies and pseudo-words to study melody and rhythm fre
   ![Image](/docs/assets/melody-ex2.png) 
   
   {% include youtubePlayer.html %}
+  {% include youtubePlayer1.html %}
   
 ### Procedure
   All the participants were exposed to both conditions. The participants accessed the experiment through the link we provided. They filled in a demographic form. Then in the experiment, they listened to the pseudowords, while also seeing them on the screen one by one. After listening to both sets, the participants completed a distraction task consisting of basic mathematical questions. At the end of the distraction task, they were asked to type in all the words they remembered in any order.
