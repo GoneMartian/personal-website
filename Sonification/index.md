@@ -1,1 +1,1 @@
- {% include youtubeplayer2.html %}
+ {% include youtubePlayer2.html %}
