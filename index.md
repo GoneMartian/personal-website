@@ -6,6 +6,8 @@
 
 I am third year student at Bilkent University. My main interest area in research is _Music Cognition_. I also like to use computational models. You can see my current CV by clicking [here.](http://ardaarslanbakan.me/cv/)
 
+I also dabble in photography as a hobby. You can see my portfolio by clicking [here.](https://ardaarslanbakan.myportfolio.com)
+
 Below are the links to my research projects and programs that I wrote:
 
 [Remembering Through Melodies: Effects of Melodical Presentation on Memory](http://ardaarslanbakan.me/project/)
