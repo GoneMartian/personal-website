@@ -9,7 +9,7 @@
 
 Mail: arda.arslanbakan@ug.bilkent.edu.tr
 
-Website: ardaarslanbakan.me
+Website: https://ardaarslanbakan.github.io/personal-website/
 
 ---
 
@@ -45,6 +45,8 @@ Beginner speaker
 
 ### Garageband
 
+### Max
+
 ---
 
 ## Interests
@@ -61,12 +63,13 @@ Social Psychology Laboratory ( Assoc Prof. [Athanasios Mouratidis](http://www.ps
 
 Linguistic Laboratory (Assoc Prof. [Alba Tuninetti](http://www.psy.bilkent.edu.tr/faculty/faculty-members/alba-tuninetti/)) 2022 January - Continuing  
 
+Undergraduate Researcher Jun 2022 - Present * I am conducting my own research on musical cognition.
+
 Bilkent Psychology Society, VIII. Neurology Days, Bilkent University - 2020 - Participant certificate
 
 ---
 
 ## Extracurricular Activities 
-Gürçağ Model United Nations Club 2017 - 2019 - Participated as a delegate,led and organized club activities.
 
 UN Sustainable Development Solutions Network (SDSN) Hub Member 2021 - Continuing 
 
@@ -80,7 +83,6 @@ Gürçağ Private High School - Turkey, Ankara 2015 - 2019
 
 ### **Bilkent University - Bachelor's Degree in Psychology 2019 - 2023 (Expected)**
 
-### **CGPA: 3.04 - Honour Student**
 
 ---
 
