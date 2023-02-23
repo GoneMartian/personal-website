@@ -10,11 +10,11 @@ I also dabble in photography as a hobby. You can see my portfolio by clicking [h
 
 Below are the links to my research projects and programs that I wrote:
 
-[Remembering Through Melodies: Effects of Melodical Presentation on Memory](https://ardaarslanbakan.github.io/project/)
+[Remembering Through Melodies: Effects of Melodical Presentation on Memory](https://ardaarslanbakan.github.io/personal-website/project/)
 
-[Guess My Number](https://ardaarslanbakan.github.io/guess_my_number/)
+[Guess My Number](https://ardaarslanbakan.github.io/personal-website/guess_my_number/)
 
-[Sonification of Tweets about Bilkent](https://ardaarslanbakan.github.io/Sonification/)
+[Sonification of Tweets about Bilkent](https://ardaarslanbakan.github.io/personal-website/Sonification/)
 
 I have also helped design the website for [Social Development Laboratory at Bilkent.](http://secilgonultas.bilkent.edu.tr/)
 
