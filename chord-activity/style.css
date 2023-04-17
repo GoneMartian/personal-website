@@ -1,38 +1,27 @@
-#container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.drop-space {
+  border: 1px dashed #ccc;
+  padding: 20px;
+  min-height: 200px;
 }
 
 .audio-container {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.audio-clip {
-  width: 80%;
-}
-
-#drop-area {
-  border: 2px dashed gray;
-  height: 400px;
-  line-height: 400px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: gray;
-  margin: 20px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  cursor: move;
 }
 
 .audio-box {
-  width: 80%;
-  height: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
