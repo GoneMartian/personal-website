@@ -21,7 +21,7 @@
 #drop-area {
   border: 2px dashed gray;
   height: 400px;
-  line-height: 100px;
+  line-height: 400px;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
