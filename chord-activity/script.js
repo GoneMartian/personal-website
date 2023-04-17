@@ -1,57 +1,47 @@
-// Get all draggable elements
-const draggableElements = document.querySelectorAll(".draggable");
+const dropArea = document.querySelector("#drop-area");
+const audioClips = [
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/I.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/ii.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/iii.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/IV.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/V.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vi.mp3" },
+  { src: "https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vii0.mp3" },
+];
 
-// Get the drop zone
-const dropZone = document.querySelector(".drop-zone");
+function createAudio(src) {
+  const audio = document.createElement("audio");
+  audio.src = src;
+  audio.controls = true;
+  audio.draggable = true;
 
-// Set up event listeners for the draggable elements
-draggableElements.forEach((draggable) => {
-  draggable.addEventListener("dragstart", dragStart);
-  draggable.addEventListener("dragend", dragEnd);
+  audio.addEventListener("dragstart", (event) => {
+    event.dataTransfer.setData("text/plain", audio.id);
+    setTimeout(() => {
+      audio.style.display = "none";
+    }, 0);
+  });
+
+  audio.addEventListener("dragend", () => {
+    audio.style.display = "block";
+  });
+
+  return audio;
+}
+
+audioClips.forEach((audioClip, index) => {
+  const audio = createAudio(audioClip.src);
+  audio.id = `audio-${index}`;
+  dropArea.appendChild(audio);
 });
 
-// Set up event listeners for the drop zone
-dropZone.addEventListener("dragover", dragOver);
-dropZone.addEventListener("drop", drop);
-
-// Variables to store the position of the dragged element
-let initialX;
-let initialY;
-
-function dragStart(event) {
-  // Store the initial position of the dragged element
-  initialX = event.clientX - event.target.offsetLeft;
-  initialY = event.clientY - event.target.offsetTop;
-
-  // Set the data transfer data
-  event.dataTransfer.setData("text/plain", event.target.id);
-}
-
-function dragEnd(event) {
-  // Reset the position of the dragged element
-  event.target.style.left = "";
-  event.target.style.top = "";
-}
-
-function dragOver(event) {
+dropArea.addEventListener("dragover", (event) => {
   event.preventDefault();
-}
+});
 
-function drop(event) {
-  // Get the id of the dragged element
-  const id = event.dataTransfer.getData("text/plain");
-
-  // Get the dragged element
-  const draggable = document.getElementById(id);
-
-  // Calculate the new position of the dragged element
-  const x = event.clientX - initialX;
-  const y = event.clientY - initialY;
-
-  // Set the position of the dragged element
-  draggable.style.left = x + "px";
-  draggable.style.top = y + "px";
-
-  // Append the dragged element to the drop zone
-  event.target.appendChild(draggable);
-}
+dropArea.addEventListener("drop", (event) => {
+  event.preventDefault();
+  const audioId = event.dataTransfer.getData("text/plain");
+  const audio = document.getElementById(audioId);
+  dropArea.appendChild(audio);
+});
