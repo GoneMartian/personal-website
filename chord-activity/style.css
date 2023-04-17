@@ -1,14 +1,23 @@
 #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .audio-clip {
-    width: 100%;
-    height: auto;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.audio-container {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-clip {
+  width: 80%;
+}
+
 #drop-area {
   border: 2px dashed gray;
   height: 100px;
