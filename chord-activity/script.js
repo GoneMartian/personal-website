@@ -1,31 +1,33 @@
-// Get the audio containers
+// Get all the audio-container elements
 const audioContainers = document.querySelectorAll('.audio-container');
 
-// Add event listeners to each audio container
-audioContainers.forEach(container => {
-  container.addEventListener('dragstart', handleDragStart);
+// Add a dragstart event listener to each audio-container element
+audioContainers.forEach(audioContainer => {
+  audioContainer.addEventListener('dragstart', e => {
+    // Set the data for the drag event to the ID of the audio-container element
+    e.dataTransfer.setData('text/plain', audioContainer.id);
+  });
 });
 
-// Get the drop area element
-const dropArea = document.querySelector('#drop-area');
+// Add a dragover event listener to the document object
+document.addEventListener('dragover', e => {
+  // Prevent the default behavior of the browser, which is to not allow dropping elements onto non-drop targets
+  e.preventDefault();
+});
 
-// Add event listeners to the drop area
-dropArea.addEventListener('dragover', handleDragOver);
-dropArea.addEventListener('drop', handleDrop);
+// Add a drop event listener to the document object
+document.addEventListener('drop', e => {
+  // Prevent the default behavior of the browser, which is to open the dropped file in the browser
+  e.preventDefault();
 
-// Define the event handlers for the audio containers
-function handleDragStart(event) {
-  event.dataTransfer.setData('text/plain', event.target.id);
-}
+  // Get the ID of the audio-container element from the drag event data
+  const id = e.dataTransfer.getData('text/plain');
 
-// Define the event handlers for the drop area
-function handleDragOver(event) {
-  event.preventDefault();
-  event.dataTransfer.dropEffect = 'move';
-}
+  // Find the audio-container element with the corresponding ID
+  const audioContainer = document.getElementById(id);
 
-function handleDrop(event) {
-  event.preventDefault();
-  const droppedElementId = event.dataTransfer.getData('text/plain');
-  const droppedElement = document.getElementById(droppedElementId);
- 
+  // Move the audio-container element to the drop location
+  audioContainer.style.position = 'absolute';
+  audioContainer.style.left = `${e.pageX}px`;
+  audioContainer.style.top = `${e.pageY}px`;
+});
