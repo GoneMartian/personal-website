@@ -1,49 +1,57 @@
-// Select all the draggable audio elements
-const audioElements = document.querySelectorAll('.audio');
+// Get all draggable elements
+const draggableElements = document.querySelectorAll(".draggable");
 
-// Set up event listeners for each audio element
-audioElements.forEach((audioElement) => {
-  // Set the draggable attribute to true
-  audioElement.setAttribute('draggable', true);
+// Get the drop zone
+const dropZone = document.querySelector(".drop-zone");
 
-  // Add event listeners for the drag events
-  audioElement.addEventListener('dragstart', dragStart);
-  audioElement.addEventListener('dragend', dragEnd);
+// Set up event listeners for the draggable elements
+draggableElements.forEach((draggable) => {
+  draggable.addEventListener("dragstart", dragStart);
+  draggable.addEventListener("dragend", dragEnd);
 });
 
-// Set up event listeners for the drop area
-const dropArea = document.querySelector('.drop-area');
-dropArea.addEventListener('dragover', dragOver);
-dropArea.addEventListener('drop', drop);
+// Set up event listeners for the drop zone
+dropZone.addEventListener("dragover", dragOver);
+dropZone.addEventListener("drop", drop);
 
-// Keep track of the currently dragged element
-let currentlyDraggedElement = null;
+// Variables to store the position of the dragged element
+let initialX;
+let initialY;
 
 function dragStart(event) {
-  // Set the currently dragged element
-  currentlyDraggedElement = event.target;
+  // Store the initial position of the dragged element
+  initialX = event.clientX - event.target.offsetLeft;
+  initialY = event.clientY - event.target.offsetTop;
 
-  // Add the 'dragging' class to the element
-  currentlyDraggedElement.classList.add('dragging');
+  // Set the data transfer data
+  event.dataTransfer.setData("text/plain", event.target.id);
 }
 
 function dragEnd(event) {
-  // Remove the 'dragging' class from the element
-  currentlyDraggedElement.classList.remove('dragging');
-
-  // Reset the currently dragged element
-  currentlyDraggedElement = null;
+  // Reset the position of the dragged element
+  event.target.style.left = "";
+  event.target.style.top = "";
 }
 
 function dragOver(event) {
-  // Prevent the default action (which is to not allow drops)
   event.preventDefault();
 }
 
 function drop(event) {
-  // Prevent the default action (which is to open the audio file in the browser)
-  event.preventDefault();
+  // Get the id of the dragged element
+  const id = event.dataTransfer.getData("text/plain");
 
-  // Add the dragged element to the drop area
-  dropArea.appendChild(currentlyDraggedElement);
+  // Get the dragged element
+  const draggable = document.getElementById(id);
+
+  // Calculate the new position of the dragged element
+  const x = event.clientX - initialX;
+  const y = event.clientY - initialY;
+
+  // Set the position of the dragged element
+  draggable.style.left = x + "px";
+  draggable.style.top = y + "px";
+
+  // Append the dragged element to the drop zone
+  event.target.appendChild(draggable);
 }
