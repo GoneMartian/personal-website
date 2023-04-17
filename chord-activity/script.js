@@ -1,23 +1,9 @@
-const containers = document.querySelectorAll('.audio-container');
-let draggedContainer = null;
+// Get the audio containers
+const audioContainers = document.querySelectorAll('.audio-container');
 
 // Add event listeners to each audio container
-containers.forEach(container => {
-  container.addEventListener('dragstart', function() {
-    draggedContainer = container;
-  });
-
-  container.addEventListener('dragover', function(event) {
-    event.preventDefault();
-  });
-
-  container.addEventListener('drop', function() {
-    const containerParent = container.parentNode;
-    const draggedContainerParent = draggedContainer.parentNode;
-    containerParent.insertBefore(draggedContainer, container);
-    draggedContainerParent.insertBefore(container, draggedContainer);
-    draggedContainer = null;
-  });
+audioContainers.forEach(container => {
+  container.addEventListener('dragstart', handleDragStart);
 });
 
 // Get the drop area element
@@ -26,6 +12,11 @@ const dropArea = document.querySelector('#drop-area');
 // Add event listeners to the drop area
 dropArea.addEventListener('dragover', handleDragOver);
 dropArea.addEventListener('drop', handleDrop);
+
+// Define the event handlers for the audio containers
+function handleDragStart(event) {
+  event.dataTransfer.setData('text/plain', event.target.id);
+}
 
 // Define the event handlers for the drop area
 function handleDragOver(event) {
@@ -37,5 +28,4 @@ function handleDrop(event) {
   event.preventDefault();
   const droppedElementId = event.dataTransfer.getData('text/plain');
   const droppedElement = document.getElementById(droppedElementId);
-  dropArea.insertBefore(droppedElement, dropArea.firstChild);
-}
+ 
