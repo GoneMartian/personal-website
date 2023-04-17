@@ -28,3 +28,11 @@
   color: gray;
   margin: 20px;
 }
+
+.audio-box {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
