@@ -2,46 +2,62 @@
 <html>
   <head>
     <title>Drag and Drop Audio Clips</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .drop-space {
+        border: 1px dashed #ccc;
+        padding: 20px;
+        min-height: 200px;
+      }
+      
+      .audio-container {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+        cursor: move;
+      }
+      
+      .audio-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="container">
-      <div class="audio-container" draggable="true" id="clip1">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/I.mp3" controls></audio>
-        </div>
+    <div class="drop-space">
+      <p>Drop audio clips here</p>
+    </div>
+    <div class="audio-box">
+      <div class="audio-container" id="audio1" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/I.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip2">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/ii.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio2" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/ii.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip3">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/iii.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio3" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/iii.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip4">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/IV.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio4" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/IV.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip5">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/V.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio5" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/V.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip6">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vi.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio6" draggable="true">
+        <audio src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vi.mp3" controls></audio>
       </div>
-      <div class="audio-container" draggable="true" id="clip7">
-        <div class="audio-box">
-          <audio class="audio-clip" src="https://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vii0.mp3" controls></audio>
-        </div>
+      <div class="audio-container" id="audio7" draggable="true">
+        <audio src="hhttps://github.com/ardaarslanbakan/personal-website/raw/gh-pages/chord-activity/Chords/vii0.mp3" controls></audio>
       </div>
-      <div id="drop-area">Drop clips here to rearrange them</div>
     </div>
     <script src="script.js"></script>
   </body>
